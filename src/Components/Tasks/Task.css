@@ -1,0 +1,68 @@
+.taskContainer{
+    padding: 20px;
+    flex-grow: 1;
+    display: flex;
+    height: fit-content;
+    gap: 10px;
+    flex-wrap: wrap;
+    align-items: start;
+    max-height: 100vh;
+    overflow-y: scroll;
+    position: relative;
+
+}
+#addNote{
+    all: unset;
+    position: fixed;
+    cursor: pointer;
+    color: var(--accent-500);
+    bottom: 30px;
+    right: 30px;
+    text-align: center;
+    height: 50px;
+    border-radius: 50%;
+
+    &:hover{
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    }
+}
+.dateStamp{
+    position:absolute;
+    left: 5px;
+    bottom: 5px;
+    font-size: 12px;
+    color: var(--white-300);
+}
+.task{  
+    padding: 5px;
+    position: relative;
+    border: var(--main-700) solid 1.5px;
+    border-radius: 5px;
+    background: var(--main-500);
+    width: 200px;
+    height: 80px;
+}
+.taskControlsContainer{
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 5px;
+}
+.taskControl{
+    all: unset;
+    border: solid 2px var(--main-700);
+    background: var(--accent-500);
+    cursor: pointer;
+    text-align: center;
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+
+
+    &:hover{
+        background: var(--main-600);
+    }
+}

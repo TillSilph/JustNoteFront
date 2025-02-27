@@ -1,0 +1,101 @@
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.modalContent {
+    position: absolute;
+    height: 100vh;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    right: 0;
+    top: 0;
+    padding: 100px 20px;
+    border-radius: 8px;
+    max-width: 500px;
+    text-align: center;
+    z-index: 9999;
+    background: var(--second-500);
+}
+
+.modalContent>span {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.modalInput {
+    border: solid var(--main-500) 2px;
+    background-color: var(--second-600);
+    resize: none;
+    width: 90%;
+    color: var(--white-500);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.modalBtn {
+    all: unset;
+    font-weight: bold;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #4ea14e;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 10px;
+    width: 150px;
+
+    &:hover {
+        background-color: rgb(63, 133, 63);
+    }
+
+    &:active {
+        background-color: #387238;
+    }
+}
+
+.react-datepicker__month-container>.react-datepicker__header {
+    color: var(--white-500);
+    background: var(--main-500);
+}
+
+.react-datepicker__day-name,
+.react-datepicker__day,
+.react-datepicker__time-name,
+.react-datepicker__current-month,
+.react-datepicker-time__header,
+.react-datepicker-year-header {
+    color: var(--white-500) !important;
+
+}
+
+.react-datepicker__month,
+.react-datepicker__header:not(.react-datepicker__header--has-time-select),
+.react-datepicker__month-container {
+    background: var(--main-500);
+
+}
+
+.react-datepicker__time-container .react-datepicker__time .react-datepicker__time-box {
+    background: var(--main-500);
+    color: var(--white-500) !important;
+}
+
+.darkDate{
+    border: solid var(--main-500) 2px;
+    background-color: var(--second-600);
+    width: 90%;
+    color: var(--white-500);
+    border-radius: 10px;
+    padding: 10px;
+}

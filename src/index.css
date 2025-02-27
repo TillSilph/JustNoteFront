@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Marmelad&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root {
+  --main-50: #F4F4F5;
+  --main-100: #E9EAEA;
+  --main-200: #C8C9CC;
+  --main-300: #A7A9AD;
+  --main-400: #64696F;
+  --main-500: #222831;
+  --main-600: #1F242C;
+  --main-700: #14181D;
+  --main-800: #0F1216;
+  --main-900: #0A0C0F;
+
+  --second-50: #F5F5F5;
+  --second-100: #EAEBEC;
+  --second-200: #CCCDCF;
+  --second-300: #ADAFB2;
+  --second-400: #6F7279;
+  --second-500: #31363F;
+  --second-600: #2C3139;
+  --second-700: #1D2026;
+  --second-800: #16181C;
+  --second-900: #0F1013;
+
+  --accent-50: #F8FBFB;
+  --accent-100: #F1F7F7;
+  --accent-200: #DDEAEB;
+  --accent-300: #C8DDDF;
+  --accent-400: #9FC4C6;
+  --accent-500: #76ABAE;
+  --accent-600: #6A9A9D;
+  --accent-700: #476768;
+  --accent-800: #354D4E;
+  --accent-900: #233334;
+
+  --white-50: #FEFEFE;
+  --white-100: #FDFDFD;
+  --white-200: #FBFBFB;
+  --white-300: #F8F8F8;
+  --white-400: #F3F3F3;
+  --white-500: #EEEEEE;
+  --white-600: #D6D6D6;
+  --white-700: #8F8F8F;
+  --white-800: #6B6B6B;
+  --white-900: #474747;
+
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: none;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background: var(--second-500);
+  color: var(--white-500);
+  font-family: "Rubik", serif;
+}

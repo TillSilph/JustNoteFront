@@ -1,0 +1,19 @@
+.navButton{
+    all: unset;
+    cursor: pointer;    
+    border-radius: 5px;
+    padding: 5px;
+
+    &.active{
+        background: var(--second-500);
+    }
+}
+.navBar{
+    background: var(--second-700);
+    height: 100vh;
+    min-width: 220px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 10px;
+}
