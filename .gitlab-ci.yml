@@ -1,0 +1,30 @@
+variables:
+  DOCKER_HOST: "unix:///var/run/docker.sock"
+  GIT_SUBMODULE_STRATEGY: recursive
+  PRIVATE_KEY: "somekey"
+  GEA_URL: "172.17.0.1:13000"
+  PORT: "9080"
+
+
+
+stages:
+  - build
+  - deploy
+
+# Этап сборки Docker-образа
+build_docker_image:
+  stage: build
+  script:
+    - docker build -t justnote-front-image .
+  only:
+    - main
+
+# Этап развертывания контейнера
+deploy:
+  stage: deploy
+  script:
+    - docker stop justnote-front || true
+    - docker rm justnote-front || true
+    - docker run -d --name justnote-front -p 9800:3030 -e PORT=$PORT -e PRIVATE_KEY=$PRIVATE_KEY -e GEA_URL=$GEA_URL justnote-front-image 
+  only:
+    - main
